@@ -7,6 +7,7 @@ const Parent = () => {
 
     const handleClick: MouseEventHandler<HTMLButtonElement> = useCallback((e) => {
         let button = e.target as HTMLButtonElement
+        console.log(button.innerText)
     }, [stateOne])
 
     const handleStateChange = () => {
