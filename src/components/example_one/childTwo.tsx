@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect, memo} from 'react';
 
-const ChildTwo = () => {
+const ChildTwo = ()  => {
+
+    useEffect(()=> console.log('Child two rerenders'))
+
     return (
-        <div>
-            
+        <div className={'ex-one child'}>
+            Child two
         </div>
     );
 };
